@@ -5,7 +5,7 @@ pyenv_install xxxxx
 
 
 pyenv virtualenv 3.13.5 cbe-env
-pyenv local mio_progetto-env
+pyenv local cbe-env
 
 
 
