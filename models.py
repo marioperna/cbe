@@ -7,7 +7,7 @@ class ParsonsProblem(Base):
     __tablename__ = "parsons_problem"
 
     #uuid v4 primary key
-    id = Column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4, unique=True, index=True)
+    uuid = Column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4, unique=True, index=True)
     #name
     name = Column(String, index=True)
     #description of the problem

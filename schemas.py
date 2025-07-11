@@ -13,7 +13,7 @@ class ParsonsProblemCreate(ParsonsProblemBase):
     pass
 
 class ParsonsProblemOut(ParsonsProblemBase):
-    id: UUID
+    uuid: UUID
 
     class Config:
         from_attributes = True

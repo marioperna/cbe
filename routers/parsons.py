@@ -25,7 +25,7 @@ def hello_problema(db: Session = Depends(get_db)):
 # get from the database by uuid field
 @router.get("/{uuid}", response_model=schemas.ParsonsProblemOut)
 def get_parsons_problem(uuid: str, db: Session = Depends(get_db)):
-    db_problem = db.query(models.ParsonsProblem).filter(models.ParsonsProblem.id == uuid).first()
+    db_problem = db.query(models.ParsonsProblem).filter(models.ParsonsProblem.uuid == uuid).first()
     if db_problem is None:
         raise HTTPException(status_code=404, detail="Problem not found")
     return db_problem
