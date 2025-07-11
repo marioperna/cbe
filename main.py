@@ -21,4 +21,4 @@ app.add_middleware(
     allow_headers=["*"],              # Header permessi
 )
 
-app.include_router(parsons.router, prefix="/api/parsons", tags=["Parsons Problems"])
+app.include_router(parsons.router, prefix="/api/parsons-problem", tags=["Parsons Problems"])
